@@ -119,6 +119,12 @@ header nav ul li a {
   color: black;
   font-weight: 600;
 }
+#instagram{
+  font-family: "Gilroy";
+   
+  display: flex;
+  gap: 3px;
+}
 header nav ul li a:hover {
   color: black;
   opacity: 0.6;
