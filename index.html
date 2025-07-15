@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="180x180" href="Assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+  <title>Portfolio | Parimal Patel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="loader-container">  <div class="loader"></div>
+</div>
+  <div id="blrone"></div>
+  <div id="blrtwo"></div>
+
+  <!-- Sidebar Starts Here -->
+  <aside id="aside">
+    <div id="close"><button>Close</button></div>
+    <nav>
+      <ul>
+        <li><a href="#" id="homenav">Home</a></li>
+        <li><a href="#worksamples">Work Samples</a></li>
+        <li><a href="https://drive.google.com/uc?export=download&id=1Bf4YWavQ2KdmmZEjowGbxd-btEszcP6j" id="resume">Download Resume</a></li>
+        <li>
+          <a href="https://www.github.com/hiral-codes" id="github"><img style="width: 33px" src="./Assets/github.svg" alt="" />See
+            Github</a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+  <!-- End Of Sidebar -->
+
+  <!-- Main Content -->
+  <main id="main">
+    <!-- Header Starts -->
+    <header>
+      <div class="--logo">Parimal Patel<span id="dot">.</span></div>
+      <nav>
+        <ul>
+          <li><a href="#" id="homenav">Home</a></li>
+          <li><a href="#worksamples">Work Samples</a></li>
+          <li><a id="resume-d" href=" https://drive.google.com/file/d/1tWWyOZD70_1_WeKTNQmlAhq4ycvq91-6/view?usp=drive_link
+            " id="resume" data-aos="fade-in">Download Resume</a></li>
+          <li>
+            <a href=" https://www.instagram.com/parimal_2587?igsh=azc4YmptZnZjZWk5" id="github"><img style="width: 70px" src="./Assets/insta.jpg" alt="" />See
+              instagram</a>
+          </li>
+        </ul>
+      </nav>
+      <div id="menubar">
+        <img src="./Assets/menu_open_FILL0_wght400_GRAD0_opsz24.svg" alt="" />&nbsp;Menu
+      </div>
+    </header>
+    <!-- Header Ends Here -->
+
+    <!-- Home Section -->
+    <section id="home">
+      <div class="home-hero">
+        <div class="design-container" data-aos="zoom-in">
+          <div id="design">Frame</div>
+          <div id="code">↯ Feel</div>
+        </div>
+      </div>
+      <h1 id="home-title">
+        I love to create
+        <br /><span id="cursive">"seamless"</span> digital experiences for
+        brands.
+      </h1>
+      <p id="intro">
+        <img id="grtngs" src="./Assets/hii-wave.gif" alt="" /><span id="intro-txt">I'm Parimal, a freelance professional
+
+          Creative video editor turning raw footage into impactful, engaging stories with smooth transitions, sharp cuts, and visual storytelling flair.
+          Explore  My portfolio for clean, polished, and visually engaging video edits that tell a story.</span>
+      </p>
+      <div class="buttons-container">
+        <button data-aos="fade-right" id="hi">Say Hello👋</button>
+        <button data-aos="fade-left" id="dres" onclick="downloadresume()">
+          Get Resume
+          <img style="width: 12px" src="./Assets/download.svg" alt="" />
+        </button>
+      </div>
+    </section>
+    <!-- Home Section Ends Here -->
+
+    <!-- Main Image -->
+    <div class="main-image">
+      <img data-aos="zoom-in-right" src="./Assets/main.png" alt="" />
+    </div>
+    <!-- Main Image Ends Here -->
+
+    <!-- Work Samples Starts Here -->
+    <section id="worksamples">
+      <!-- Heading -->
+      <div class="heading">
+        <h1 class="main-head">
+          <div class="line"></div>
+          What I do
+        </h1>
+        <h1 class="sub-head">Work Samples</h1>
+      </div>
+      <!-- End Of Heading -->
+
+      <!-- Work Samples Images -->
+      <div class="work-container">
+        <div class="left-content">
+          <div class="box" data-aos="fade-right">
+            <video src="./Assets/projectvideo/tufF15.mp4" autoplay loop muted playsinline style="width:100%;height:100%;object-fit:cover;"></video>
+          </div>
+          <div class="box" data-aos="fade-left">
+             <video src="./Assets/projectvideo/intro.mov" autoplay loop muted playsinline style="width:100%;height:100%;object-fit:cover;"></video>
+          </div>
+          <div class="box" data-aos="fade-right">
+             <video src="./Assets/projectvideo/Voice over final-final.mp4" autoplay loop muted playsinline style="width:100%;height:100%;object-fit:cover;"></video>
+          </div>
+          <!-- <div class="box" data-aos="fade-left">
+             <video src="./Assets/projectvideo/intro.mov" autoplay loop muted playsinline style="width:100%;height:100%;object-fit:cover;"></video>
+          </div> -->
+        </div>
+        <div class="right-content">
+           <button id="mywork" onclick="gotodrive()">
+  <img src="./Assets/seemywork.png" alt="">
+</button>
+
+<script>
+  function gotodrive() {
+    window.open("https://drive.google.com/drive/folders/1U-5M02MkKr48mRUymGRKE2MAcmNoygI6?usp=drive_link", "_blank");
+  }
+</script>
+
+        </div>
+      </div>
+    </section>
+    <!-- Work Samples Ends Here -->
+
+    <!-- Skills Starts Here -->
+    <section id="skills">
+      <!-- Heading -->
+      <div class="heading">
+        <h1 class="main-head">
+          <div class="line"></div>
+          What I Am Good At
+        </h1>
+        <!-- End Of Heading -->
+        <!-- Skills Container -->
+
+        <h1 class="sub-head">Skills and intrests</h1>
+        <h3 class="sub-2"> 🎬 Video Editing Tools</h3>
+        <div class="designing-container" data-aos="fade-right">
+        
+          <img src="./Assets/premiere pro.png" alt="">
+          <img src="./Assets/capcut.png" alt="">
+          <img src="./Assets/Effects.png" alt="">
+        </div>
+      </div>
+      <h3 class="sub-2"> Thumbnail & Title Design Suite</h3>
+      <div class="designing-container" data-aos="fade-left">
+          <img src="./Assets/Figma.webp" alt="">
+          <img src="./Assets/Adobe.png" alt="">
+          <img src="./Assets/Canvaa.jpg" alt="">
+      </div>
+      </div>
+      <!-- Skills Container Ends Here -->
+    </section>
+
+    <!-- End Of About Me -->
+
+    <section id="letsconnect">
+      <h1 class="main-head">
+        <div class="line"></div>
+        Contact Me
+      </h1>
+      <h1 class="sub-head" data-aos="zoom-out-right">Let's Connect</h1>
+      <form action="" class="contact">
+        <div class="input-container"><input type="text" name="" id="name" placeholder="Name">
+          <input type="email" name="" id="email" placeholder="Email"></div>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+        <button id="send" type="
+        submit" onclick="sendEmail()">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <h6>created with ❤️
+      by me</h6>
+  </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,573 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter&family=Lobster&family=Ubuntu&display=swap");
+@font-face {
+  font-family: "Gilroy";
+  src: url("./Assets/Gilroy-Regular.woff2");
+}
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("./Assets/Gilroy-Bold.woff2");
+}
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("./Assets/Gilroy-Medium.woff2");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+  font-family: "Gilroy";
+}
+aside {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  right: 0;
+  bottom: 0;
+  background-color: #f6f6f6;
+  z-index: 999;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+#close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: black;
+  padding: 2rem;
+}
+#close button {
+  border: none;
+  background: #40bbe0;
+  color: white;
+  padding: 5px 10px;
+  font-family: "Gilroy-Bold";
+  font-size: 1rem;
+  border-radius: 6px;
+}
+aside nav ul li {
+  list-style: none;
+}
+aside nav ul li {
+  padding: 10px 0px;
+}
+aside nav ul li a {
+  font-size: 1.2rem;
+  color: black;
+  text-decoration: none;
+}
+#blrone {
+  position: fixed;
+  right: 0%;
+  bottom: 50%;
+  width: 60px;
+  height: 60px;
+  opacity: 0.4;
+  -webkit-filter: blur(35px) saturate(10);
+  filter: blur(35px) saturate(10);
+  background-color: rebeccapurple;
+}
+#blrtwo {
+  position: fixed;
+  left: 2%;
+  bottom: 70%;
+  width: 60px;
+  height: 60px;
+  opacity: 0.4;
+  -webkit-filter: blur(35px) saturate(10);
+  filter: blur(35px) saturate(10);
+  background-color: rgb(255, 194, 114);
+}
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3vh 5vw;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.584);
+  opacity: 0.4;
+  font-size: 14px;
+}
+#github {
+  display: flex;
+  align-items: center;
+  opacity: 1;
+  gap: 3px;
+  color: black;
+  font-weight: 600;
+}
+header nav ul li a:hover {
+  color: black;
+  opacity: 0.6;
+  transition: all 0.1s ease-out;
+}
+header nav ul li #homenav {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: #97daef;
+  opacity: 1;
+  font-size: 14px;
+}
+#menubar {
+  display: flex;
+  align-items: center;
+  color: #40bbe0;
+  font-size: 20px;
+  display: none;
+}
+.--logo {
+  font-family: "Gilroy-Bold";
+  font-size: 20px;
+}
+#dot {
+  color: rgb(255, 194, 114);
+}
+#home {
+  width: 85%;
+  max-height: fit-content;
+  margin: auto;
+}
+.home-hero {
+  width: 100%;
+  padding: 25px 0;
+  display: flex;
+  justify-content: center;
+}
+.design-container {
+  display: flex;
+  font-family: "Ubuntu", sans-serif;
+  gap: 10px;
+  padding: 10px;
+  font-weight: 600;
+  box-shadow: 0 2px 150px 5px rgba(32, 35, 161, 0.692);
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#🎬 Video Editing Tools {
+  padding: 10px 40px;
+  border-radius: 8px;
+  font-size: 20px;
+  box-shadow: 5px 1px 20px #00bdf73e;
+  background-color: white;
+}
+#code {
+  padding: 10px 20px 0px 0px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ff676b;
+}
+
+#grtngs {
+  width: 150px;
+  object-fit: contain;
+}
+#home-title {
+  text-align: center;
+  font-family: "Gilroy";
+  font-size: 4rem;
+  font-weight: 700;
+}
+#cursive {
+  font-family: "Dancing Script", cursive;
+  color: palevioletred;
+  font-weight: 1;
+}
+#intro {
+  padding: 1vh 0;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#intro-txt {
+  width: 50%;
+  padding-top: 0px;
+  font-size: 1.3rem;
+  opacity: 0.6;
+}
+.buttons-container {
+  width: 100%;
+  padding: 4vh 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.buttons-container button {
+  padding: 10px 20px;
+  border: none;
+  background: none;
+  font-size: 1.3rem;
+  border-radius: 25px;
+  cursor: pointer;
+  color: white;
+  font-family: "Gilroy";
+}
+#hi {
+  background-color: #ff676b;
+}
+#dres {
+  gap: 8px;
+  background-color: #40bbe0;
+}
+
+/* Main Image */
+.main-image{
+  width: 85%;
+  max-height: fit-content;
+  margin: auto;
+}
+.main-image img{
+  width: 100%;
+  object-fit: contain;
+}
+
+#worksamples{
+  width: 85%;
+  margin: auto;
+  max-height: fit-content;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* heading */
+.main-head{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 1.3rem;
+}
+.line{
+  width: 55px;
+  height: 3.5px;
+  background-color: black;
+}
+.sub-head{
+  padding: 25px 0px;
+  font-size: 3rem;
+}
+.sub-2{
+  padding-bottom: 0px;
+  font-size: 2rem;
+}
+.designing-container{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 25px;
+  width: fit-content;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    padding: 40px 30px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  background-color: white;
+}
+.designing-container img {
+  height: 50px;
+  border-radius: 5px;
+  /* box-shadow: 5px 1px 20px rgba(0, 0, 0, 0.584); */
+  /* Ensure the image fits within the dimensions */
+}
+
+.work-container{
+  padding-top: 25px;
+  width: 100%;
+  flex: 1;
+  display: flex;
+}
+.left-content{
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.right-content{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.box{
+  width: 400px;
+  height: 400px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.box img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.box:nth-child(2){
+  padding-inline: 10px;
+  background-color: rgba(255, 166, 0, 0.623);
+}
+.box:nth-child(3){
+  background: none;
+}
+#mywork{
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 10px;
+}
+#mywork img{
+  width: 150px;
+}
+
+/* Skills */
+#skills{
+  width: 85%;
+  margin: auto;
+  max-height: fit-content;
+  padding: 25px 0px;
+
+}
+
+/* About me */
+#aboutme{
+  width: 85%;
+  margin: auto;
+  max-height: fit-content;
+  padding: 25px 0px;
+  text-align: center;
+
+  /* background-color: #40bbe0; */
+}
+
+
+#letsconnect{
+  width: 85%;
+  margin: auto;
+  min-height: fit-content;
+}
+.contact{
+  width: 75%;
+  height: fit-content;
+  /* background-color: #ff676b; */
+}
+.input-container{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+.input-container input:nth-child(1){
+  width: 30%;
+  border-radius: 2px;
+  padding: 10px 20px;
+  border: 2px solid black;
+  outline: none;
+  background: none;
+  font-family: 'Gilroy-Bold';
+}
+.input-container input:nth-child(2){
+  flex: 1;
+  border-radius: 2px;
+  padding: 10px 20px;
+  border: 2px solid black;
+  outline: none;
+  background: none;
+  font-family: 'Gilroy-Bold';
+}
+.contact textarea{
+  background: none;
+  padding: 10px 20px;
+  border-radius: 2px;
+  outline: none;
+  font-family: 'Gilroy-Bold';
+  border: 2px solid black;
+  margin-top: 15px;
+  width: 100%;
+}
+#send{
+  padding: 10px 100px;
+  background: none;
+  border: 2px solid black;
+  margin-top: 15px;
+  border-radius: 2px;
+  font-family: 'Gilroy-Bold';
+}
+footer{
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Gilroy-Medium';
+}
+.loader-container{
+  position: fixed;
+  inset: 0;
+  background-color: white;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.loader {
+  width: fit-content;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 30px;
+  background: radial-gradient(circle closest-side,#000 94%,#0000) right/calc(200% - 1em) 100%;
+  animation: l24 1s infinite alternate linear;
+}
+
+.loader::before {
+  content: "Loading...";
+  line-height: 1em;
+  color: #0000;
+  background: inherit;
+  background-image: radial-gradient(circle closest-side,#fff 94%,#000);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@keyframes l24 {
+  100% {
+    background-position: left
+  }
+}
+
+@media (max-width: 700px) {
+  header nav {
+    display: none;
+  }
+  .left-content{
+    width: 85%;
+    margin: auto;
+    justify-content: center;
+  }
+  #worksamples{
+    width: 85%;
+    margin: auto;
+  }
+  .sub-head{
+    font-size: 2rem;
+  }
+  .sub-2{
+    font-size: 1.8rem;
+  }
+  .line{
+    width: 50px;
+  }
+  .work-container{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .right-content{
+    justify-content: center;
+  }
+  .box{
+    width: 300px;
+    height: 300px;
+  }
+  #intro {
+    width: 100%;
+    padding-inline: 1rem;
+    flex-direction: column;
+    line-height: 1.5rem;
+  }
+  #home-title {
+    font-size: 2.5rem;
+  }
+  #design {
+    padding: 5px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+  }
+  #code {
+    padding: 5px 10px 0px 0px;
+  }
+  #menubar {
+    display: block;
+    display: flex;
+    align-items: center;
+  }
+  #menubar img {
+    margin-top: 2px;
+  }
+  #grtngs {
+    width: 150px;
+    object-fit: contain;
+  }
+  #intro-txt {
+    width: 100vw;
+    line-height: 30px;
+    padding-top: 25px;
+    padding-inline: 1rem;
+  }
+  #hi{
+    padding: 0;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-size: 1rem;
+  }
+  #dres{
+    padding: 0;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    height: 40px;
+    font-size: 1rem;
+  }
+  .form-container{
+    flex-direction: column;
+  }
+  .input-container{
+    flex-direction: column;
+    align-items: start;
+  }
+  .contact{
+    width: 85%;
+  }
+  .input-container input:nth-child(1){
+    width: 100%;
+  }
+  .input-container input:nth-child(2){
+    width: 100%;
+  }
+}
